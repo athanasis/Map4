@@ -1,0 +1,50 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <!--
+  Using the CDN:
+  Include the CDN ArcGIS API for JavaScript stylesheet
+  -->
+  <link rel="stylesheet" href="https://js.arcgis.com/3.16/esri/css/esri.css"/>
+  <title>PhoneGap Map</title>
+  <style>
+  /* Hide the default PhoneGap div */
+  .app {
+    display: none;
+  }
+  /* Set html, body height */
+  html, body {
+    height: 100%;
+  }
+  /* Set the map div height */
+  #map {
+    height: 100%;
+  }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <h1>PhoneGap</h1>
+    <div id="deviceready" class="blink">
+      <p class="event listening">Connecting to Device</p>
+      <p class="event received">Device is Ready!</p>
+    </div>
+  </div>
+  <div id="map"></div>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <!--
+  Using the CDN:
+  Include the CDN ArcGIS API for JavaScript library
+  -->
+  <script src="https://js.arcgis.com/3.16/"></script>
+  <script type="text/javascript">
+      app.initialize();
+  </script>
+</body>
+</html>
